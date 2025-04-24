@@ -1,8 +1,71 @@
-import React from "react";
+// import React from "react";
+
+// const Inputfield = ({
+//   Labelname,
+//   type,
+//   placeholder,
+//   labelstyle,
+//   inputStyle,
+//   divstyle,
+//   name,
+//   htmlFor,
+//   id,
+//   onChange,
+//   values,
+//   errors,
+//   touched,
+//   disabled,
+//   maxLength,
+//   pattern,
+//   innerDiv,
+//   leadingImage, // New prop for the image
+//   imageStyle, // Optional: Style for the image
+// }) => {
+//   return (
+//     <div className={divstyle}>
+//       {Labelname && (
+//         <label htmlFor={htmlFor} className={labelstyle}>
+//           {Labelname}
+//         </label>
+//       )}
+//       <div className={`flex items-center  ${innerDiv}`}>
+//         {leadingImage && (
+//           <img src={leadingImage} alt="" className={imageStyle} />
+//         )}
+//         <input
+//           id={id}
+//           name={name}
+//           onChange={onChange}
+//           value={values}
+//           className={`placeholder-placeHolder  focus:outline-none ${inputStyle} ${
+//             leadingImage ? "pl-1" : ""
+//           }`} // Adds padding if image is present
+//           type={type}
+//           maxLength={maxLength}
+//           pattern={pattern}
+//           placeholder={placeholder}
+//           disabled={disabled}
+//           autoComplete="off"
+//         />
+//       </div>
+//       {errors && touched && (
+//         <div className="text-end mt-2  text10 text-red-500">
+//           {errors}
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default Inputfield;
+
+
+
+import React, { useState } from "react";
 
 const Inputfield = ({
   Labelname,
-  type,
+  type = "text",
   placeholder,
   labelstyle,
   inputStyle,
@@ -21,37 +84,57 @@ const Inputfield = ({
   leadingImage, // New prop for the image
   imageStyle, // Optional: Style for the image
 }) => {
+  const [isFocused, setIsFocused] = useState(false);
+  const [localValue, setLocalValue] = useState(values || "");
+
+  const handleChange = (e) => {
+    setLocalValue(e.target.value);
+    onChange && onChange(e);
+  };
+
   return (
-    <div className={divstyle}>
+    <div className={`relative ${divstyle}`}>
+      {/* Floating Label */}
       {Labelname && (
-        <label htmlFor={htmlFor} className={labelstyle}>
+        <label
+          htmlFor={htmlFor}
+          className={`
+            absolute left-0 transition-all duration-200 ease-in-out
+            ${labelstyle}
+            ${isFocused || localValue ? "text-xs -top-3" : "text-base top-2"}
+          `}
+        >
           {Labelname}
         </label>
       )}
-      <div className={`flex items-center  ${innerDiv}`}>
+
+      {/* Input Field */}
+      <div className={`flex items-center ${innerDiv}`}>
         {leadingImage && (
           <img src={leadingImage} alt="" className={imageStyle} />
         )}
         <input
           id={id}
           name={name}
-          onChange={onChange}
-          value={values}
-          className={`placeholder-placeHolder  focus:outline-none ${inputStyle} ${
+          onFocus={() => setIsFocused(true)}
+          onBlur={() => setIsFocused(false)}
+          onChange={handleChange}
+          value={localValue}
+          className={`placeholder-transparent focus:outline-none peer ${inputStyle} ${
             leadingImage ? "pl-1" : ""
-          }`} // Adds padding if image is present
+          }`}
           type={type}
           maxLength={maxLength}
           pattern={pattern}
-          placeholder={placeholder}
+          placeholder={placeholder || " "}
           disabled={disabled}
           autoComplete="off"
         />
       </div>
+
+      {/* Validation Error */}
       {errors && touched && (
-        <div className="text-end mt-2  text10 text-red-500">
-          {errors}
-        </div>
+        <div className="text-end mt-2 text10 text-red-500">{errors}</div>
       )}
     </div>
   );

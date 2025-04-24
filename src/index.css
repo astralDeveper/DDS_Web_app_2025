@@ -12,10 +12,10 @@ body{
 }
 @layer utilities {
   .mainheading {
-    @apply lg:text-[60px] md:text-[50px] text-[40px] lg:leading-[120px] md:leading-[92px] sm:leading-[45px];
+    @apply lg:text-[60px] md:text-[40px] text-[20px] lg:leading-[60px] md:leading-[40px] sm:leading-[20px];
   }
   .subheading {
-    @apply lg:text-[48px] md:text-[30px] text-[28px] lg:leading-[110px] md:leading-[82px] sm:leading-[38px];
+    @apply lg:text-[48px] md:text-[30px] text-[28px] lg:leading-[60px] md:leading-[38px] sm:leading-[24px];
   }
   .preheading {
     @apply lg:text-[30px] md:text-[24px] text-[18px] lg:leading-[64px] md:leading-[44px] leading-[32px];
@@ -27,10 +27,10 @@ body{
     @apply lg:text-[20px] md:text-[16px] text-[12px] lg:leading-[68px] md:leading-[48px] sm:leading-[24px];
   }
   .text1 {
-    @apply lg:text-[28px] md:text-[18px] text-[12px] lg:leading-[57px] md:leading-[38px] sm:leading-[24px];
+    @apply lg:text-[26px] md:text-[18px] text-[12px] lg:leading-[57px] md:leading-[38px] sm:leading-[24px];
   }
   .text2 {
-    @apply lg:text-[18px] md:text-[12px] text-[10px] lg:leading-[20px] md:leading-[16px] sm:leading-[13px];
+    @apply lg:text-[18px] md:text-[16px] text-[14px] lg:leading-[20px] md:leading-[16px] sm:leading-[13px];
   }
 
   .text3{
@@ -44,5 +44,13 @@ body{
   }
 
   
+}
+
+
+/* Add this to support sticky behavior */
+.sticky-sidebar {
+  position: fixed;
+  top: 20px;
+  width: 400px; /* Adjust based on your layout */
 }
 

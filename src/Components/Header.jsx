@@ -23,7 +23,7 @@ const Header = () => {
   return (
 
     <>
-      <main className={`xl:w-[80%] w-[90%] mx-auto p-4 sticky`}>
+      <main className={`xl:w-[80%] w-[90%] mx-auto p-4`}>
 
         <div className='flex items-center justify-between sm:gap-2 gap-0'>
           {/* logo Start */}
