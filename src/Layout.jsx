@@ -1,16 +1,19 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 
 const Layout = () => {
   return (
     <>
-      <div className="bg-[#262626]">
+      <div>
         <Header />
       </div>
-      <main>
+      <main className="">
         <Outlet />
       </main>
-      {/* <Footer /> */}
+      <div className="bg-yellow_color">
+        <Footer />
+      </div>
     </>
   );
 };

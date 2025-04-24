@@ -6,7 +6,10 @@
   font-family: "Poppins";
   font-family: "Barlow";
 }
-
+body{
+  
+  background-color: #262626;
+}
 @layer utilities {
   .mainheading {
     @apply lg:text-[60px] md:text-[50px] text-[40px] lg:leading-[120px] md:leading-[92px] sm:leading-[45px];
