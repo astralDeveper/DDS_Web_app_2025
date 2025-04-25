@@ -12,7 +12,7 @@ body{
 }
 @layer utilities {
   .mainheading {
-    @apply lg:text-[60px] md:text-[40px] text-[20px] lg:leading-[60px] md:leading-[40px] sm:leading-[20px];
+    @apply lg:text-[60px] md:text-[40px] text-[20px] lg:leading-[75px] md:leading-[40px] sm:leading-[20px];
   }
   .subheading {
     @apply lg:text-[48px] md:text-[30px] text-[28px] lg:leading-[60px] md:leading-[38px] sm:leading-[24px];
@@ -48,9 +48,9 @@ body{
 
 
 /* Add this to support sticky behavior */
-.sticky-sidebar {
+/* .sticky-sidebar {
   position: fixed;
   top: 20px;
-  width: 400px; /* Adjust based on your layout */
-}
+  width: 350px; Adjust based on your layout
+} */
 

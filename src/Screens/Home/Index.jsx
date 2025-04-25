@@ -1,15 +1,16 @@
 import React from 'react'
 import Container from '../../Components/Container'
-import { IMAGES } from '../../Utils/images'
+import OurCompletedWork from '../../Components/CompletedWork/OurCompletedWork'
 import OurTeam from '../../Components/Team/OurTeam'
 
 const Home = () => {
   return (
     <Container>
-      <OurTeam/>
+      {/* <OurCompletedWork /> */}
+      <OurTeam />
     </Container>
   )
 }
 
 export default Home
-{/* <WorkLaptop iamge={IMAGES.WEB} /> */}
+{/* <WorkLaptop iamge={IMAGES.WEB} /> */ }

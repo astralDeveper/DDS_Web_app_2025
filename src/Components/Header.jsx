@@ -89,11 +89,12 @@ const Header = () => {
       {/* mobile_responsive_start */}
       {
         <div
-          className={`absolute ${toggle ? "top-[12.8%]" : "top-0"} left-0 right-0 w-full p-4 pt-18 h-full bg-black_color flex justify-center gap-6 transform transition-transform duration-500 ease-in-out ${toggle ? 'translate-y-0' : '-translate-y-[100%]'}`}>
+          className={`absolute ${toggle ? "top-[12.8%]" : "top-0"} left-0 right-0 w-full p-4 pt-18 h-full bg-[#262626] z-50 flex justify-center gap-6 transform transition-transform duration-500 ease-in-out ${toggle ? 'translate-y-0' : '-translate-y-[100%]'}`}>
           <ul className='flex flex-col gap-4 w-full items-center'>
             {
               nav_items.map((path, ind) => (
                 <li
+                onClick={() => { setToggle(false) }}
                   className={`${params.pathname === path?.path
                     ? "bg-gray_color lg:py-2 py-2 lg:px-6 px-2 rounded-full w-[50%] transition-colors duration-300 ease-linear text-white_color text-center"
                     : "text-white_color"} text2`}

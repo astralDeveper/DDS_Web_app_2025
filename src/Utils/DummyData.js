@@ -153,21 +153,88 @@ export const team_data = [
     {
         name: "Hassan Soomro",
         role: "Creative Lead",
-        image: IMAGES.TEAMONE
+        image: IMAGES.TEAMONE,
+        facebook: IMAGES.FB,
+        instagram: IMAGES.INSTA,
+        linkedin: IMAGES.LINK
     },
     {
         name: "Maya Ali",
         role: "Marketing",
-        image: IMAGES.TEAMTWO
+        image: IMAGES.TEAMTWO,
+        facebook: IMAGES.FB,
+        instagram: IMAGES.INSTA,
+        linkedin: IMAGES.LINK
     },
     {
         name: "Mahira Khan",
         role: "Sales Head",
-        image: IMAGES.TEAMTHREE
+        image: IMAGES.TEAMTHREE,
+        facebook: IMAGES.FB,
+        instagram: IMAGES.INSTA,
+        linkedin: IMAGES.LINK
     },
     {
         name: "Dev Team Lead",
         role: "Ahad Raza Mir",
-        image: IMAGES.TEAMFOUR
+        image: IMAGES.TEAMFOUR,
+        facebook: IMAGES.FB,
+        instagram: IMAGES.INSTA,
+        linkedin: IMAGES.LINK
     },
 ]
+
+
+export const brand_items = [
+    {
+        id: 1,
+        title: "Create Your Brand",
+        description:
+            "Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Armet malesuada eget aliquam imperdiet. Arcu dolor sed pretium.",
+        position: "top-right", // For layout help
+        images: [
+            IMAGES.DECOVERONE,
+            IMAGES.DECOVERTWO,
+            IMAGES.DECOVERTHREE,
+            IMAGES.DECOVERFOUR,
+            IMAGES.DECOVERFIVE,
+        ],
+    },
+    {
+        id: 2,
+        title: "Make It Famous",
+        description:
+            "Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Armet malesuada eget aliquam imperdiet. Arcu dolor sed pretium.",
+        position: "bottom-left", // For layout help
+        images: [
+            IMAGES.DECOVERSIX,
+            IMAGES.DECOVERSEVEN,
+        ],
+    },
+];
+
+export const gridData = [
+    { type: "image", content: IMAGES.DECOVERONE },
+    { type: "image", content: IMAGES.DECOVERTWO },
+    {
+      type: "text",
+      content: {
+        title: "Create Your Brand",
+        description:
+          "Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed vel montis diam. Armet malesuada eget aliquam imperdiet.",
+      },
+    },
+    { type: "image", content: IMAGES.DECOVERTHREE },
+    { type: "image", content: IMAGES.DECOVERFOUR },
+    { type: "image", content: IMAGES.DECOVERFIVE },
+    {
+      type: "text",
+      content: {
+        title: "Make It Famous",
+        description:
+          "Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed vel montis diam.",
+      },
+    },
+    { type: "image", content: IMAGES.DECOVERSIX },
+    { type: "image", content: IMAGES.DECOVERSEVEN },
+  ];
