@@ -5,7 +5,7 @@ import Footer from "./Components/Footer";
 const Layout = () => {
   return (
     <>
-      <div>
+      <div className="bg-yellow_color">
         <Header />
       </div>
       <main className="">

@@ -8,7 +8,7 @@
 }
 body{
   
-  background-color: #262626;
+  background-color: #232323;
 }
 @layer utilities {
   .mainheading {
@@ -24,13 +24,13 @@ body{
     @apply lg:text-[38px] md:text-[28px] text-[18px] lg:leading-[70px] md:leading-[50px] sm:leading-[30px];
   }
   .heading2 {
-    @apply lg:text-[20px] md:text-[16px] text-[12px] lg:leading-[68px] md:leading-[48px] sm:leading-[24px];
+    @apply lg:text-[20px] md:text-[16px] text-[12px] lg:leading-[32px] md:leading-[20px] sm:leading-[15px];
   }
   .text1 {
-    @apply lg:text-[26px] md:text-[18px] text-[12px] lg:leading-[57px] md:leading-[38px] sm:leading-[24px];
+    @apply lg:text-[26px] md:text-[18px] text-[12px] lg:leading-[32px] md:leading-[20px] sm:leading-[16px];
   }
   .text2 {
-    @apply lg:text-[18px] md:text-[16px] text-[14px] lg:leading-[20px] md:leading-[16px] sm:leading-[13px];
+    @apply lg:text-[18px] md:text-[16px] text-[14px] lg:leading-[32px] md:leading-[20px] sm:leading-[16px];
   }
 
   .text3{

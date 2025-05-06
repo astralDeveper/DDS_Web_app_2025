@@ -1,5 +1,5 @@
 import React from 'react'
-import { brand_items, gridData } from '../../Utils/DummyData'
+import {  gridData } from '../../Utils/DummyData'
 
 const OurCompletedWork = () => {
     return (

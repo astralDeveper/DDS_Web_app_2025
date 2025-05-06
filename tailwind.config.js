@@ -48,6 +48,9 @@ export default {
         "hero-pattern": "url('./src/Assets/servicedetailbanner.png')",
         "ceo-pattern": "url('../public/images/ceobgimg.png')",
       },
+      height: {
+        'fill-available': '-webkit-fill-available',
+      },
       keyframes: {
         scroll: {
           to: { transform: "translate(calc(-50% - 2.5rem))" },
@@ -65,6 +68,8 @@ export default {
         gray_color: "#5E5E5E",
         light_gray_color: "#DADADA",
         yellow_color: "#191919",
+        dark_color: "#232323",
+        mainColor: "#343434",
       },
     },
   },

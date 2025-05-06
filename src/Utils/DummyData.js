@@ -5,6 +5,9 @@ import quality from "../Assets/images/qualityicon.gif"
 import marketing from "../Assets/images/marketingicon.gif"
 import graphics from "../Assets/images/graphicsicon.gif"
 import uiux from "../Assets/images/uiuxicon.gif"
+import serviceicon from "../Assets/images/serviceicon.gif"
+import platte from "../Assets/images/platte.gif"
+import best from "../Assets/images/best.gif"
 
 export const nav_items = [
     {
@@ -35,6 +38,14 @@ export const nav_items = [
         name: "Contact",
         path: "/contact"
     },
+]
+
+export const home_banner = [
+    IMAGES.BANNERONE,
+    IMAGES.BANNERTWO,
+    IMAGES.BANNERTHREE,
+    IMAGES.BANNERFOUR,
+
 ]
 
 export const footerData = [
@@ -69,7 +80,6 @@ export const footerData = [
     },
 ];
 
-
 export const services_data = [
     {
         title: "Website Development",
@@ -102,7 +112,6 @@ export const services_data = [
         description: "Our UI/UX service designs intuitive, user-centered interfaces and seamless experiences that enhance usability and drive engagement."
     }
 ]
-
 
 export const reviews_data = [
     {
@@ -184,57 +193,124 @@ export const team_data = [
     },
 ]
 
-
-export const brand_items = [
-    {
-        id: 1,
-        title: "Create Your Brand",
-        description:
-            "Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Armet malesuada eget aliquam imperdiet. Arcu dolor sed pretium.",
-        position: "top-right", // For layout help
-        images: [
-            IMAGES.DECOVERONE,
-            IMAGES.DECOVERTWO,
-            IMAGES.DECOVERTHREE,
-            IMAGES.DECOVERFOUR,
-            IMAGES.DECOVERFIVE,
-        ],
-    },
-    {
-        id: 2,
-        title: "Make It Famous",
-        description:
-            "Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed velit morbi diam. Armet malesuada eget aliquam imperdiet. Arcu dolor sed pretium.",
-        position: "bottom-left", // For layout help
-        images: [
-            IMAGES.DECOVERSIX,
-            IMAGES.DECOVERSEVEN,
-        ],
-    },
-];
-
 export const gridData = [
     { type: "image", content: IMAGES.DECOVERONE },
     { type: "image", content: IMAGES.DECOVERTWO },
     {
-      type: "text",
-      content: {
-        title: "Create Your Brand",
-        description:
-          "Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed vel montis diam. Armet malesuada eget aliquam imperdiet.",
-      },
+        type: "text",
+        content: {
+            title: "Create Your Brand",
+            description:
+                "Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed vel montis diam. Armet malesuada eget aliquam imperdiet.",
+        },
     },
     { type: "image", content: IMAGES.DECOVERTHREE },
     { type: "image", content: IMAGES.DECOVERFOUR },
     { type: "image", content: IMAGES.DECOVERFIVE },
     {
-      type: "text",
-      content: {
-        title: "Make It Famous",
-        description:
-          "Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed vel montis diam.",
-      },
+        type: "text",
+        content: {
+            title: "Make It Famous",
+            description:
+                "Velit lacus ipsum, urna, pretium lacinia. Mauris fermentum ut nunc est, nibh. Lectus eu vel et placerat sed vel montis diam.",
+        },
     },
     { type: "image", content: IMAGES.DECOVERSIX },
     { type: "image", content: IMAGES.DECOVERSEVEN },
-  ];
+];
+
+export const OurProcessData = [
+    {
+        imgsec: [
+            IMAGES.PROCESSONE,
+            IMAGES.PROCESSTHREE,
+            IMAGES.PROCESSTWO,
+            IMAGES.PROCESSFOUR,
+        ]
+    },
+    {
+        processtext: {
+            title: "Our Process",
+            description:
+                "At our software house, we start by thoroughly understanding client requirements and defining clear project objectives. We then focus on the development phase, where we design, code, and rigorously test the software to ensure it meets high-quality standards. Finally, we deploy the solution and provide ongoing maintenance and support to ensure its optimal performance and continuous improvement.",
+        },
+    }
+]
+
+
+export const why_choose_us = [
+    {
+        title: "Fast Service",
+        icon: serviceicon,
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+    },
+    {
+        title: "World Class Designer",
+        icon: platte,
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+    },
+    {
+        title: "Best Quality",
+        icon: best,
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod."
+    }
+
+]
+
+export const tab_data = [
+    "UI/UX Design",
+    "Website Development",
+    "Graphic Design",
+    "App Development",
+
+]
+
+export const our_blogs_data = [
+    {
+        title: "Could this VR sketching tool be coming of age for designers in the future?",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque",
+        image: IMAGES.BLOGONE
+    },
+    {
+        title: "8 Cities That Show You What The Future Will Look Like (Innovative Ideas)",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque",
+        image: IMAGES.BLOGTWO
+    },
+    {
+        title: "15 Gift Ideas for Mom and Dad. Wherever They Are This Year",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque",
+        image: IMAGES.BLOGTHREE
+    },
+]
+
+export const whyChoseUSIcon = [
+    {
+        icon: IMAGES.VISION,
+        title: "Our Vision"
+    },
+    {
+        icon: IMAGES.MISSION,
+        title: "Our Mission"
+    },
+    {
+        icon: IMAGES.TARGET,
+        title: "Target Audience"
+    }
+]
+
+
+export const whyChoseUSTexts = [
+    {
+        title: "Company Experience",
+        description: `From wireframing to prototyping, our creative UI/UX designers combine strategic thinking and creative expertise to deliver visually captivating designs. From wireframing to prototyping, our creative.`
+    },
+    {
+        title: "Company Experience",
+        description: `From wireframing to prototyping, our creative UI/UX designers combine strategic thinking and creative expertise to deliver visually captivating designs. From wireframing to prototyping, our creative.`
+    },
+    {
+        title: "Company Experience",
+        description: `From wireframing to prototyping, our creative UI/UX designers combine strategic thinking and creative expertise to deliver visually captivating designs. From wireframing to prototyping, our creative.`
+
+    }
+]
