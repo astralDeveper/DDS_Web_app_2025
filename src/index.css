@@ -53,4 +53,21 @@ body{
   top: 20px;
   width: 350px; Adjust based on your layout
 } */
+.glow-circle {
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  transition: box-shadow 0.3s;
+  width: 20px;
+  height: 20px;
+}
 
+.glow-circle.active {
+  width: 20px;
+  height: 20px;
+  background-color: #00aaff;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 5px rgba(0, 170, 255, 0.5);
+  position: absolute;
+  transition: top 0.3s ease;
+}

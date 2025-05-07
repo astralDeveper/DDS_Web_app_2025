@@ -4,6 +4,7 @@ import Home from "../../Screens/Home/Index";
 import Services from "../../Screens/Services";
 import Work from "../../Screens/Works";
 import About from "../../Screens/About";
+import ServiceDetail from "../../Screens/ServiceDetail";
 
 
 export const router = createBrowserRouter([
@@ -15,10 +16,13 @@ export const router = createBrowserRouter([
         index: true,
         element: <Home />,
       },
-
       {
         path: "/services",
         element: <Services />,
+      },
+      {
+        path: "/service-detail",
+        element: <ServiceDetail />,
       },
       {
         path: "/work",
