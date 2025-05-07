@@ -70,6 +70,7 @@ export default {
         yellow_color: "#191919",
         dark_color: "#232323",
         mainColor: "#343434",
+        text_color: "#A7A7A7",
       },
     },
   },

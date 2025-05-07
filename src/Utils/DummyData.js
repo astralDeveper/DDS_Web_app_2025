@@ -314,3 +314,33 @@ export const whyChoseUSTexts = [
 
     }
 ]
+
+export const company_experiance = [
+    {
+        icon: IMAGES.CHECK,
+        text: "Over 15yeras of eperince in the industry"
+    },
+    {
+        icon: IMAGES.CHECK,
+        text: "Over 15yeras of eperince in the industry"
+    },
+    {
+        icon: IMAGES.CHECK,
+        text: "Over 15yeras of eperince in the industry"
+    },
+]
+
+export const hearFromYou = [
+    {
+        icon: IMAGES.CLOCK,
+        title: "24/7 Assistance",
+    },
+    {
+        icon: IMAGES.ENERGY,
+        title: "Quick Change Resolution",
+    },
+    {
+        icon: IMAGES.STARS,
+        title: "Flexible Working Hours",
+    },
+]

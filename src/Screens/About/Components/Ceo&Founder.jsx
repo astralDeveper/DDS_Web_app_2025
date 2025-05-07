@@ -1,6 +1,7 @@
 import React from 'react'
 import { IMAGES } from '../../../Utils/images'
 import Button from '../../../Components/Button'
+import { company_experiance } from '../../../Utils/DummyData'
 
 const CeoFounder = () => {
     return (
@@ -8,9 +9,9 @@ const CeoFounder = () => {
 
 
 
-            <div>
+            <div className=''>
                 <img
-                    className='md:w-[400px] w-[250px] object-contain'
+                    className='md:w-[400px] sm:w-[250px] mx-auto object-contain'
                     src={IMAGES.CEO}
                     alt={IMAGES.CEO}
                 />
@@ -26,15 +27,61 @@ const CeoFounder = () => {
                     divstyle="md:py-3 py-1"
                 />
 
-                <div>
-                    <h3>Asad Mehmood</h3>
-                    <p>From wireframing to prototyping, our creative UI/UX designers combine strategic thinking and creative expertise to deliver visually captivating designs. From wireframing to prototyping, our creative UI/UX designers combine strategic. From wireframing to prototyping,</p>
+                <div className=''>
                     <div>
-                        <img src="" alt="" />
-                        <img src="" alt="" />
-                        <img src="" alt="" />
+                        <h3 className='preheading font-semibold text-white_color'>Asad Mehmood</h3>
+                        <p className='text3 text-[#A7A7A7]'>From wireframing to prototyping, our creative UI/UX designers combine strategic thinking and creative expertise to deliver visually captivating designs. From wireframing to prototyping, our creative UI/UX designers combine strategic. From wireframing to prototyping,</p>
+                    </div>
+                    <div className='flex items-start md:gap-4 gap-2 md:py-4 py-2'>
+                        <img
+                            src={IMAGES.FACEBOOK}
+                            alt={IMAGES.FACEBOOK}
+                            className='md:w-[40px] w-[20px]'
+                        />
+                        <img
+                            src={IMAGES.TWITER}
+                            alt={IMAGES.TWITER}
+                            className='md:w-[40px] w-[20px]'
+                        />
+                        <img
+                            src={IMAGES.LINKEDIN}
+                            alt={IMAGES.LINKEDIN}
+                            className='md:w-[40px] w-[20px]'
+                        />
                     </div>
                 </div>
+
+                <div className=''>
+                    <div className='w-full bg-gray_color h-[2px] ' />
+                </div>
+
+                <div className=''>
+                    <h4 className='subheading font-semibold text-white_color'>Company Experience</h4>
+                    <p className='text3 text-[#A7A7A7]'>From wireframing to prototyping, our creative UI/UX designers combine strategic thinking and creative expertise to deliver visually captivating designs. From wireframing to prototyping, our creative.</p>
+                </div>
+
+                <ul className='flex flex-col md:gap-3 gap-2 py-4'>
+                    {
+                        company_experiance.map((item, ind) => (
+                            <li key={ind} className='flex items-center md:gap-2 gap-1'>
+                                <span>
+                                    <img
+                                        src={item.icon}
+                                        alt={item.icon}
+                                        className=' md:w-[24px] w-[12px] object-contain'
+                                    />
+                                </span>
+
+                                <span className='text3 text-[#A7A7A7]'>
+                                    {item.text}
+                                </span>
+                            </li>
+                        ))
+                    }
+
+                </ul>
+
+
 
             </div>
 
